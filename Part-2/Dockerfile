@@ -2,7 +2,7 @@
 FROM python:2.7-slim
 
 # Set the working directory to /app
-WORDIR /app
+WORKDIR /app
 
 # Copy the current directory contents into the container at /app
 ADD . /app
@@ -17,5 +17,5 @@ EXPOSE 80
 ENV NAME World
 
 # Run app.py when the container launches
-CMD ["python", "app.py]
+CMD ["python", "app.py"]
 
